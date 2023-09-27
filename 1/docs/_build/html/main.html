@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>main module &#8212; v  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="aoo" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="main-module">
+<h1>main module<a class="headerlink" href="#main-module" title="Link to this heading">¶</a></h1>
+<dl class="py function" id="module-main">
+<dt class="sig sig-object py" id="main.create_new_contact">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">create_new_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.create_new_contact" title="Link to this definition">¶</a></dt>
+<dd><p>Створює новий контакт.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact (ContactCreate): Інформація про контакт.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Інформація про створений контакт.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.delete_single_contact">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">delete_single_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contact_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.delete_single_contact" title="Link to this definition">¶</a></dt>
+<dd><p>Видаляє конкретний контакт.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact_id (int): ID контакту.</p>
+</dd>
+<dt>Returns:</dt><dd><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.get_all_contacts">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">get_all_contacts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skip</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.get_all_contacts" title="Link to this definition">¶</a></dt>
+<dd><p>Отримує інформацію про конкретний контакт.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact_id (int): ID контакту.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Інформація про контакт.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.get_single_contact">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">get_single_contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contact_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.get_single_contact" title="Link to this definition">¶</a></dt>
+<dd><p>Оновлює інформацію про конкретний контакт.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact_id (int): ID контакту.
+updated_data (ContactUpdate): Оновлена інформація про контакт.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Оновлена інформація про контакт.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.login">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.login" title="Link to this definition">¶</a></dt>
+<dd><p>Авторизує користувача.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>email (str): Електронна адреса користувача.
+password (str): Пароль користувача.
+db (Session, optional): Об’єкт сесії бази даних. За замовчуванням використовується локальна сесія.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Результат авторизації користувача.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.register_new_user">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">register_new_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.register_new_user" title="Link to this definition">¶</a></dt>
+<dd><p>Реєструє нового користувача.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>user (UserCreate): Інформація про користувача для реєстрації.
+db (Session, optional): Об’єкт сесії бази даних. За замовчуванням використовується локальна сесія.</p>
+</dd>
+<dt>Returns:</dt><dd><p>User: Інформація про зареєстрованого користувача.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="main.update_single_contact">
+<span class="sig-prename descclassname"><span class="pre">main.</span></span><span class="sig-name descname"><span class="pre">update_single_contact</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main.update_single_contact" title="Link to this definition">¶</a></dt>
+<dd><p>Оновлює інформацію про конкретний контакт.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>contact_id (int): ID контакту.
+updated_data (ContactUpdate): Оновлена інформація про контакт.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: Оновлена інформація про контакт.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">v</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">aoo</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">main module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">aoo</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">aoo</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, v.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/main.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
